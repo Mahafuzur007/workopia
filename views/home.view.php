@@ -1,7 +1,7 @@
-<?php loadPartial('head'); ?>
-<?php loadPartial('navbar'); ?>
-<?php loadPartial('showcase-search'); ?>
-<?php loadPartial('top-banner'); ?>
+<?= loadPartial('head') ?>
+<?= loadPartial('navbar') ?>
+<?= loadPartial('showcase-search') ?>
+<?= loadPartial('top-banner') ?>
 
 
 <!-- Job Listings -->
@@ -166,5 +166,5 @@
 
 
 
-<?php loadPartial('bottom-banner'); ?>
-<?php loadPartial('footer'); ?>
+<?= loadPartial('bottom-banner') ?>
+<?= loadPartial('footer') ?>
