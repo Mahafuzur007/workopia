@@ -1,12 +1,23 @@
 <?php
+
+
 require '../helpers.php';
 
-// inspect($uri);
-// inspect($method);
+require basePath('Database.php');
+$config = require basePath('config/db.php');
+
+$db = new Database($config);
+
+// if ($db) {
+//     echo 'connected';
+// } else {
+//     echo 'not connected';
+// }
 
 require basePath('Router.php');
 
 $router = new Router();
+
 $routes = require basePath('routes.php');
 
 $uri = $_SERVER['REQUEST_URI'];
